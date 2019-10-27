@@ -11,7 +11,7 @@ var app = {
 gulp.task('lib', function() {
   gulp.src('bower_components/**/*.js')
   .pipe(gulp.dest(app.devPath + 'vendor'))
-  .pipe(gulp.dest(app.prd Path + 'vendor'))
+  .pipe(gulp.dest(app.prdPath + 'vendor'))
   .pipe($.connect.reload());
 });
 
