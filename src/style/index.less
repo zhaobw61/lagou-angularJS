@@ -1,5 +1,6 @@
 @import './template/head.less';
 @import './template/foot.less';
+@import './template/positionList.less';
 @import './property.less';
 .fs(@px) {
     font-size: unit(@px / 37.5, rem);
@@ -55,5 +56,6 @@ html,body{
     margin: 0;
 }
 body {
+    background-color: @bodyBgColor;
     .fs(16);
 }
