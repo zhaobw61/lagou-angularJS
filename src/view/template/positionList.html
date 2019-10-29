@@ -1,10 +1,7 @@
 <ul class="bg-w position-list">
-    <li class="item">
-        <img class="f-l logo" src="image/company-3.png" alt="">
-        <h3 class="title">销售</h3>
-        <p class="text">
-            千度[上海] 互联网
-            2016-06-01 11：05
-        </p>
+    <li class="item" ng-repeat="item in data">
+        <img class="f-l logo" ng-src="{{item.imgSrc}}" alt="">
+        <p class="text" ng-bind="item.companyName+'['+item.cityName+']'+' '+item.industryName +' '+item.scaleName"> </p>
+        <p class="text" ng-bind="item.time"></p>
     </li>
 </ul>
