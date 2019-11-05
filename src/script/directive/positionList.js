@@ -6,6 +6,9 @@ angular.module('app').directive('appPositionList', [function(){
         templateUrl: 'view/template/positionList.html',
         scope: {
             data: '='
+        },
+        link:function($scope){
+            console.log($scope.data)
         }
     }
 }]);
