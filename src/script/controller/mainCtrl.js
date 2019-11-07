@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app').controller('mainCtrl',['$scope',function($scope){
+angular.module('app').controller('mainCtrl',['$scope',function($http,$scope){
     $scope.list = [{
         id: '1',
         name: '销售',
