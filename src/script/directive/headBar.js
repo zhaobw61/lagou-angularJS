@@ -11,6 +11,9 @@ angular.module('app').directive('appHeadBar',[function(){
             $scope.back = function(){
                 window.history.back();
             }
+            $scope.$on('abc',function(event,data){
+
+            })
         }
     }
 }])

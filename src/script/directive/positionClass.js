@@ -12,7 +12,9 @@ angular.module("app").directive('appPositionClass', [function () {
                 $scope.positionList = $scope.com.positionClass[idx].positionList;
                 $scope.isActive = idx;
             }
-            $scope.showPositionList(0)
+            $scope.$watch('com',function(newVal){
+                if(newVal) $scope.showPositionList(0)
+            })
         }
     }
 }])

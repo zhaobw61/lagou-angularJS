@@ -38,3 +38,38 @@
 #### $q
 
 目的是为了实现延迟加载和promise
+
+#### 控制器和作用域
+
+(1) 控制器(controller):视图对应的业务逻辑，为数据模型添加行为和属性
+
+(2) 作用域($scope):保存数据模型和行为
+
+(3) $id: 唯一对应$scope
+
+(4) $parent: $scope的父作用域
+
+(5) $root:？？？
+
+(6) $watch $on $broadcast $emit $digest
+
+#### 广播事件
+
+(1) 向下广播
+$scope.$broadcast('abc',{id:1});
+$scope.$on('abc',function(event,data){})
+
+(2)向上广播
+$scope.$emit('abc',{id:1});
+$scope.$on('abc',function(event,data){})
+
+注意：在接受方还没有初始化完成，广播就已经结束了
+
+#### $digest
+
+$scope.$digest:当双向数据绑定失效，可以调用下。
+
+### $watch
+
+监听一个值的变化
+
