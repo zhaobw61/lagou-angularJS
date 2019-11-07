@@ -3,5 +3,4 @@ angular.module('app').controller('mainCtrl',['$http','$scope',function($http,$sc
     $http.get('/data/positionList.json').success(function(resp){
         $scope.list = resp;
     })
-    $scope.name = 'zhaobowen'
 }])
