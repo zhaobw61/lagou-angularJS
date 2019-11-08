@@ -1,5 +1,7 @@
 'use strict'
-angular.module('app').directive('appHead',[function(){
+angular.module('app').directive('appHead',['cache', function(cache){
+    cache.testConsole('heade')
+    console.log(cache)
     return {
         restrict: 'A',
         replace: true,

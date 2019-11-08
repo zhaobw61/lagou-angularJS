@@ -20,6 +20,17 @@
 
 (5) angular.run(): 在所有页面执行的前进行执行
 
+(6) angular.service(): 提供服务 挂在this上 没有私有作用域
+`angular.service('serviceName',[function(){
+    this.setName = function(){}
+}])`
+(7) angular.factory(): 提供服务 返回的是一个对象，可以写一些私有变量
+
+    - *factory是普通function，而service是一个构造器(constructor)
+
+`angular.factory('serviceName',[function(){
+    retrun {}
+}])`
 #### 自定义指令
 
 (1) <my-dir></my-dir>
