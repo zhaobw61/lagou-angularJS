@@ -18,6 +18,8 @@
 
 (4) angular.controller('mainCtrl'): 创建一个控制器
 
+(5) angular.run(): 在所有页面执行的前进行执行
+
 #### 自定义指令
 
 (1) <my-dir></my-dir>
