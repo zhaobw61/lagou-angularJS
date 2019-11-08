@@ -1,7 +1,7 @@
 'use strict';
-angular.module('app').controller('positionCtrl', ['$q', '$http', '$state', '$scope', function ($q, $http, $state, $scope) {
+angular.module('app').controller('positionCtrl', ['$q', '$http', '$state', '$scope', 'cache', function ($q, $http, $state, $scope, cache) {
     $scope.isLogin = false;
-
+    cache.testConsole('positionCtrl');
     function getPosition() {
         var def = $q.defer();
         $http.get('/data/position.json?id=' + $state.params.id).success(function (resp) {
