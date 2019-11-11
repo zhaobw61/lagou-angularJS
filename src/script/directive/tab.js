@@ -9,7 +9,6 @@ angular.module('app').directive('appTab',[function(){
       templateUrl: 'view/template/tab.html',
       link:function($scope){
         $scope.click = function(tab){
-          console.log(tab)
           $scope.selectId = tab.id;
           $scope.tabClick(tab);
         }
