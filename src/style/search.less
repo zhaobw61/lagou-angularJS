@@ -3,11 +3,14 @@
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   .h(40);
   .lh(40);
-  img{
+
+  img {
     transform: scale(0.6);
   }
+
   input {
     background-color: @bodyBgColor;
     border-radius: 80px;
@@ -18,11 +21,14 @@
     .h(25);
     .w(190);
   }
+
   button {
     background-color: @headBgColor;
+
     &:first-child {
       color: @defaultColor;
     }
+
     &:last-child {
       background-image: url(../image/search.png);
       background-repeat: no-repeat;
@@ -33,4 +39,7 @@
       margin-left: 10px;
     }
   }
+}
+.search-list {
+  .mt(80);
 }

@@ -2,7 +2,7 @@
 
 练手项目
 
-#### 第五章 6-10 节 21：51
+#### 第五章 11-13 节
 
 ### 笔记
 
@@ -31,6 +31,9 @@
 `angular.factory('serviceName',[function(){
     retrun {}
 }])`
+
+(8) angular.value():创建全局变量
+
 #### 自定义指令
 
 (1) <my-dir></my-dir>
