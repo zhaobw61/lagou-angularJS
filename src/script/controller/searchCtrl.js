@@ -18,6 +18,7 @@ angular.module('app').controller('searchCtrl', ['dict', '$http', '$state', '$sco
     id: 'scale',
     name: '公司规模'
   }];
+  $scope.filterObj = {};
   $scope.tClick = function (id, name) {
     // console.log(id,name);
     $scope.sheet.list = dict[id];

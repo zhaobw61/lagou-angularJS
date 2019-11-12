@@ -2,6 +2,7 @@
     <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in data|filterByObj:filterObj">
         <img class="f-l logo" ng-src="{{item.imageUrl}}" alt="">
         <p class="text" ng-bind="item.companyName+'['+item.cityName+']'+' '+item.industryName +' '+item.scaleName"> </p>
+        <p class="text" ng-bind="item.salaryName"></p>
         <p class="text" ng-bind="item.date"></p>
         <div class="clear"></div>
     </li>

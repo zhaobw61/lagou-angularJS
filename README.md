@@ -34,6 +34,16 @@
 
 (8) angular.value():创建全局变量
 
+(9) angular.filter(name,[functin(){}]):过滤器
+`
+<div ng-app="myApp" ng-controller="myCtrl">
+姓名: {{ msg | reverse:{'id':'p1','name':'zzzz'} }}
+</div>
+`
+`angular.module('app').filter('filterByObj',[function(){
+    return function(list, obj){};
+}]);`
+
 #### 自定义指令
 
 (1) <my-dir></my-dir>
