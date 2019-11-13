@@ -308,6 +308,163 @@
   background-image: url(../image/background.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.login form {
+  margin-top: 6.93333333rem;
+}
+.login form .ng-invalid + span {
+  position: absolute;
+  color: red;
+  right: 0;
+  height: 100%;
+  text-align: right;
+  font-size: 12px;
+}
+.login form .ng-invalid + span p {
+  margin: 0;
+}
+.login form .form-line {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  font-size: 0;
+  width: 8rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+}
+.login form .form-line:first-child {
+  border-bottom: 1px solid #fff;
+}
+.login form .form-line .icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-position: 20px 10px;
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 1.46666667rem;
+}
+.login form .form-line .account {
+  background-image: url(../image/account.png);
+}
+.login form .form-line .lock {
+  background-image: url(../image/lock.png);
+}
+.login form .form-line input {
+  border-width: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  outline-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  width: 6.53333333rem;
+  font-size: 0.37333333rem;
+  padding-top-left: 0.8rem;
+}
+.login form .form-line input::-webkit-input-placeholder {
+  color: #fff;
+}
+.login form button {
+  width: 8rem;
+  height: 0.93333333rem;
+  font-size: 22px;
+  font-weight: bold;
+}
+.login form button.login-btn {
+  margin-top: 75px;
+  background-color: #12d5b5;
+  color: #fff;
+}
+.login form button.register-btn {
+  margin-top: 20px;
+  background-color: rgba(18, 213, 181, 0.2);
+  color: #12d5b5;
+  border: 1px solid #12d5b5;
+}
+.login {
+  background-image: url(../image/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.login form {
+  margin-top: 6.93333333rem;
+}
+.login form .ng-invalid + span {
+  position: absolute;
+  color: red;
+  right: 0;
+  height: 100%;
+  text-align: right;
+  font-size: 12px;
+}
+.login form .ng-invalid + span p {
+  margin: 0;
+}
+.login form .form-line {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  font-size: 0;
+  width: 8rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+}
+.login form .form-line:first-child {
+  border-bottom: 1px solid #fff;
+}
+.login form .form-line .icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-position: 20px 10px;
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 1.46666667rem;
+}
+.login form .form-line .account {
+  background-image: url(../image/account.png);
+}
+.login form .form-line .lock {
+  background-image: url(../image/lock.png);
+}
+.login form .form-line input {
+  border-width: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  outline-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  width: 6.53333333rem;
+  font-size: 0.37333333rem;
+  padding-top-left: 0.8rem;
+}
+.login form .form-line input::-webkit-input-placeholder {
+  color: #fff;
+}
+.login form button {
+  width: 8rem;
+  height: 0.93333333rem;
+  font-size: 22px;
+  font-weight: bold;
+}
+.login form button.login-btn {
+  margin-top: 75px;
+  background-color: #12d5b5;
+  color: #fff;
+}
+.login form button.register-btn {
+  margin-top: 20px;
+  background-color: rgba(18, 213, 181, 0.2);
+  color: #12d5b5;
+  border: 1px solid #12d5b5;
 }
 html,
 body {
