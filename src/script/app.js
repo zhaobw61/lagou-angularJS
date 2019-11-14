@@ -1,1 +1,1 @@
-angular.module('app',['ui.router','ngCookies','validation'])
+angular.module('app',['ui.router','ngCookies','validation','ngAnimate']) 
