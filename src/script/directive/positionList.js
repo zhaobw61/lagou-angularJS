@@ -1,5 +1,5 @@
 'use strict'
-angular.module('app').directive('appPositionList', [function(){
+angular.module('app').directive('appPositionList', ['cache','$http',function(cache,$http){
     return {
         restrict: 'A',
         replace: true,
@@ -10,7 +10,15 @@ angular.module('app').directive('appPositionList', [function(){
             filterObj: '='
         },
         link:function($scope){
-            console.log($scope.data)
+            $scope.name = cache.get('name') || "";
+            $scope.select = function(item){
+                $http.post('data/favorite.json',{
+                    id:item.id,
+                    select: !item.select
+                }).success(function(){
+                    item.select = !item.select;
+                })
+            }
         }
     }
 }]);
